@@ -1,0 +1,11 @@
+
+export("cw.multiblock", "cw.predict", "cw.tenfold", "mbpcaiv.fast", "mbpls.fast", "mbregular")
+
+importFrom("ade4", dudi.pca, ktab.data.frame, scalewt, col.names)
+importFrom("doParallel", registerDoParallel)
+importFrom("parallel", detectCores, clusterSetRNGStream, makeCluster, stopCluster)
+importFrom("foreach", foreach, "%dopar%")
+importFrom("kknn", train.kknn, kknn)
+importFrom("stats", kmeans, lm.wfit, runif, sd)
+
+
